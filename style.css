@@ -1,0 +1,380 @@
+.circle{
+    height:50px;
+    width:50px;
+    border-radius:25px;
+    float:left;
+    position:absolute;
+    z-index:4
+}
+.circle2{
+    height:50px;
+    width:50px;
+    border-radius:5px;
+    float:left;
+    position:relative;
+    z-index:4;
+    text-align:center;
+    font-weight:bolder;
+    color:cornsilk
+}
+.circlefake{
+    height:50px;
+    width:50px;
+    border-radius:25px;
+    position:absolute;
+    z-index:4
+}
+.circlefake:hover{
+    transform:scale(1.5);
+    transform-origin:center;
+}
+.circleFakeAnimation{
+    animation:circleFake .2s ease both
+
+}
+.initFakeCircle{
+    animation:pickedColor .2s ease both;
+    transform-origin:center;
+}
+
+@keyframes circleFake{
+    0%{transform:translateX(0)}
+    100%{transform:translateX(300px);opacity:30%}
+}
+
+@keyframes pickedColor{
+    0%{transform:scale(1.5)}
+    100%{transform:scale(1)}
+    
+
+}
+.middle-container1{
+    width:60%;
+    height:750px;
+    border:10px solid lightblue;
+    border-top:none;
+    position:absolute;
+    left:5%;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+    
+
+}
+.middle-container2{
+    width:60%;
+    height:750px;
+    border:10px solid lightblue;
+    border-top:none;
+    position:absolute;
+    left:5%;
+    border-radius: 0 0 20px 20px;
+    
+
+}
+.middle-container3{
+    width:60%;
+    height:750px;
+    border:10px solid lightblue;
+    border-top:none;
+    position:absolute;
+    left:5%;
+    border-radius: 0 0 20px 20px;
+    
+
+}
+.delayfall{
+animation:fall0 .5s both ease;
+animation-delay: 20s;
+
+}
+.fall{
+    animation:fall0 .5s both ease;
+    
+    
+    }
+.side-container{
+    height:750px;
+    width:30%;
+    position:absolute;
+    left:65%;
+    border:5px solid rgb(51, 65, 70);
+    border-radius:10px;
+
+
+}
+
+@keyframes fall0{
+    0%{transform: translateY(0);}
+    85%{transform: translateY(700px);width:50px;height:50px}
+    100%{transform: translateY(750px);width:0;height:0}
+
+
+}
+@keyframes fall1{
+    0%{transform: translateY(0);}
+    90%{transform: translateY(700px);width:40px;height:40px}
+    100%{transform: translateY(750px);width:0;height:0}
+
+
+}
+@keyframes fall2{
+    0%{transform: translateY(0);}
+    80%{transform: translateY(700px);}
+    100%{transform: translateY(750px);width:0;height:0}
+
+
+}
+@keyframes fall3{
+    0%{transform: translateY(0);}
+    60%{transform: translateY(700px);width:50px;height:50px}
+    100%{transform: translateY(750px);width:0;height:0}
+
+
+}
+@keyframes fall4{
+    0%{transform: translateY(0);}
+    40%{transform: translateY(700px);width:40px;height:40px}
+    100%{transform: translateY(750px);width:0;height:0}
+
+
+}
+@keyframes fall5 {
+    0%{transform: translateY(0);}
+    99%{transform: translateY(700px);width:30px;height:30px}
+    100%{transform: translateY(750px);width:0;height:0}
+
+
+}
+
+.invisibleP{
+    display:none
+}
+
+.catched{
+    -webkit-animation-play-state: paused; 
+    animation-play-state: paused;
+    transform:scale(3);
+
+} 
+
+body{
+    overflow: hidden;
+}
+
+
+.decorateButton{
+    width:100%;
+    background-color:skyblue;
+    color:slategrey;
+    border-radius:10px;
+    float:left;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+.submitColorButton{
+    width:100%;
+    background-color:skyblue;
+    color:slategrey;
+    border-radius:10px;
+    float:left;
+    margin-bottom:5px;
+}
+.return{
+    width:100%;
+    background-color:skyblue;
+    color:slategrey;
+    border-radius:10px;
+    float:left;
+    margin-bottom:5px;
+}
+.nameInput{
+    border-radius:10px;
+    width:60%;
+    float:left;
+    
+}
+.nameInput:focus{
+    background-color:lightskyblue;
+
+}
+.nameSubmitButton{
+    background-color:skyblue;
+    color:slategrey;
+    border-radius:10px;
+    float:right;
+    width:30%;
+
+}
+
+/* widget  */
+
+.maincontainer{
+     position:fixed;
+     height:100%;
+     width:100%;
+     background-color:white;
+     z-index:5;
+}
+
+.column1{
+    height:100%;
+    width:5%;
+    position:absolute;
+    left:5%;
+    background-color:lightsteelblue
+}
+
+.column2{
+    height:100%;
+    width:5%;
+    position:absolute;
+    left:15%;
+    background-color:lightsteelblue
+}
+.column4{
+    height:100%;
+    width:5%;
+    position:absolute;
+    left:80%;
+    background-color:lightsteelblue
+}
+
+.column5{
+    height:100%;
+    width:5%;
+    position:absolute;
+    left:90%;
+    background-color:lightsteelblue
+}
+
+.column3{
+    height:100%;
+    width:50%;
+    position:absolute;
+    left:25%;
+    background-color:lightsteelblue
+}
+.hori{
+    height:5%;
+    background-color:yellow;
+    width:80%;
+    margin:auto;
+    margin-bottom:3%;
+}
+
+.hori2{
+    height:50%;
+    background-color:yellow;
+    width:80%;
+    margin:auto;
+    margin-bottom:3%;
+
+}
+
+.verAnimation{
+    animation: verAnimation .5s both ease 
+}
+
+.horiAnimation{
+    animation: horiAnimation .5s both ease;
+    animation-delay:.5s
+}
+
+@keyframes verAnimation{
+    0%{ transform:translateY(-100%)
+
+    }
+  100%{transform:translateY(0%)
+        
+    }
+}
+
+@keyframes horiAnimation{
+    0%{ transform:translateX(-200%)
+
+    }
+  100%{transform:translateX(0%)
+
+    
+}
+}
+.userinputContainer{
+    border-radius: 5px;
+    background-color:white;
+    position:fixed;
+    width:25%;
+    top:75%;
+    right:8%;
+    z-index:6;
+    text-align:center;
+}
+
+.userinput{
+    position:relative;
+    margin:auto;
+    margin:5%;
+    height:90%;
+  
+  }
+  .userform{
+      width:100%;
+      margin-bottom:5px;
+  }
+  .nameDisplay{
+    width:100%;
+    padding:5px;
+    position:relative;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bolder;
+    color:cornflowerblue;
+    margin-bottom:5px;
+    margin-top:5px;
+    text-align:center;
+    margin:auto;
+    float:left;
+}
+.nameDisplay p{
+    margin:auto;
+}
+  .formButton{
+      width:50px;
+      height:50px;
+      background-color:orange;
+      font-weight:bolder;
+      font-family:Arial, Helvetica, sans-serif;
+      position:fixed;
+      top:80%;
+      right:8%;
+      border-radius:25px;
+      z-index:7;
+      text-align:center;
+}
+.formButton p{
+    position:relative;
+    top:3px;
+
+}
+
+
+.newHoriDiv{
+    height:100%;
+    width:2.5%;
+    float:left;
+    position: relative;
+
+
+}
+.newVerDiv{
+    height:5%;
+    width:100%;
+}
+.instructions{
+    margin:auto;
+    color:white;
+    position:absolute;
+    z-index:5;
+    left:10%;
+    width:50%;
+    text-align:center;
+
+}
